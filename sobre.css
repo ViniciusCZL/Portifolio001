@@ -21,6 +21,7 @@ a {
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #fdfdfd;
+    margin: 5px;
 }
 
 .logo img {
@@ -35,7 +36,7 @@ a {
     /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -49,7 +50,7 @@ a {
 }
 
 .menu li {
-    margin-left: 10px;
+    margin-left: 0px;
     transition: background-color 0.5s;
 }
 
@@ -64,13 +65,15 @@ a {
 
 .container {
     display: flex;
-    gap: 50px;
-    padding: 50px;
+    padding: 0px;
+    flex-wrap: wrap;
 }
 
 .image {
-    max-width: 600px;
+    max-width: 60%;
     height: auto;
+    margin-top: 50px;
+    padding: 50px;
 }
 
 .content {
@@ -78,6 +81,8 @@ a {
     flex-direction: column;
     width: 100%;
     max-width: 800px;
+    margin-top: 50px;   
+    padding: 50px;
 }
 
 .text {
@@ -86,7 +91,7 @@ a {
     padding: 20px;
     border-radius: 10px;
     color: white;
-    width: 100%;
+    width: 80%;
     margin-bottom: 30px;
 }
 
@@ -106,6 +111,7 @@ p {
     gap: 50px;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 .icons a{
     color: white;
@@ -201,13 +207,22 @@ p {
     .container{
         flex-direction: column;
         display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .container #image{
         width: 100%;
         height: auto;
-
-    }
-    .image{
-        width: 300px;
-        height: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-mobile.abrir{
@@ -222,6 +237,43 @@ p {
 
     .header{
         width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
     }
 
+    #image  {
+        width: 80%;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0px;
+        object-fit: cover;
+    }
+
+    .image {
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* #image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
 }
